@@ -1,72 +1,134 @@
-        section{
-            margin-top:10px;
-        }
-        body{
-            background-color: #fff;
-            /* border: 1px solid red; */
-            border-radius: 10px;
+/* Formatações Gerais */
 
-        }
-        #logo{
-            margin: 10px;
-            /* border: 1px solid red; */
-            float: left;
-        }
-        #all{
-            /* border: 1px solid red; */
-            border-radius: 10px;
-            background-color: #77dd77;
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #77dd77;
+}
 
-        }
-        h1{
-            text-align: center;
-            padding-right: 280px;
+.grow0 {
+    flex-grow: 0;
+}
 
-        }
-        #header-index{
-            background: #77dd77;
-            height: 150px;
-            border: 1px solid white;
-            border-radius: 10px;
-        }
-        .menu-index{
-            /* border: 1px solid red; */
-            padding-top: 20px;
-        }
-        a{
-            text-decoration: none;
-            color: #fff;
-            /* border: 1px solid red; */
-            padding: 10px;
-            margin: 10px;
-        }
-        a:hover{
-            background: #fff;
-            color: black;
-            border-radius: 5px;
-        }
-        #publicacao-index{
-            /* border: 1px solid red; */
-            width: 700px;
-            text-align: left;
-            background-color: #bdecb6;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 5px;
-            float: left;
-        }
-        #publicacao-index h1{
-            /* border: 1px solid red; */
-        }
-        #publicacao-index p{
-            margin: 10px;
-        }
-        #publicacao-index img{
-            margin: 10px;
-        }
-        #menu-lateral{
-            float: right;
-            border: 1px solid red;
-            margin-right: 10px;
-            background-color: #bdecb6;
-        }
+.grow1 {
+    flex-grow: 1;
+}
+
+.grow2 {
+    flex-grow: 2;
+}
+
+/* Fim Geral */
+
+
+/* Incio Header */
+
+#header-index {
+    margin: 10px;
+    display: flex;
+    padding: px;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.logo-index {
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.name-empresa {
+    /* border: 1px solid red; */
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Fim Header */
+
+/* Inicio Menu */
+
+#menu-index {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-index a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#menu-index a:hover {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#conteudo {
+    display: flex;
+}
+
+/* Fim Menu */
+
+/* Noticia principal */
+.noticia {
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px;
+}
+
+.noticia img {
+    height: 50%;
+    width: 50%;
+}
+
+/* Fim Noticia Principal */
+
+/* Inicio Menu Lateral */
+.lateral a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.lateral ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    /* border: 1px solid red; */
+
+
+}
+
+.lateral ul li {
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+.lateral h2 {
+    text-align: center;
+}
+
+.lateral img {
+    width: 50%;
+    height: 50%;
+}
